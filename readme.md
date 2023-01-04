@@ -1,34 +1,4 @@
-Skip to content
-Search or jump to…
-Pull requests
-Issues
-Codespaces
-Marketplace
-Explore
- 
-@Spookie6 
-Spookie6
-/
-djs-handler
-Public
-Code
-Issues
-Pull requests
-Actions
-Projects
-Wiki
-Security
-Insights
-Settings
-djs-handler/readme.md
-@Spookie6
-Spookie6 Update readme.md
-Latest commit 9aac4fc on Apr 11, 2022
- History
- 1 contributor
-30 lines (18 sloc)  835 Bytes
-
-# Handler for discord.js version 13
+# Handler for discord.js version 14
 
 ## Credits
 
