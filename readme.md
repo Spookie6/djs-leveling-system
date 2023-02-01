@@ -1,12 +1,4 @@
-# Handler for discord.js version 14
-
-## Credits
-
-Credit where credit's due.
-
-The base structure for this handler was a handler made by [reconlx](https://github.com/reconlx/djs-base-handler).
-
----
+# Discord.js@v14 Leveling System
 
 ## Setup
 
@@ -19,14 +11,39 @@ Fill in the config.js file.
 `activityType` can be `ActivityType.watching`, `ActivityType.listening` and `ActivityType.competing`,
 `activityStatus` can be `online`, `invisible`, `idle` and `dnd`.
 
-## Notes
+## Example
+```js
+const { ActivityType } = require('discord.js');
+require('./src/bot/handler/index');
 
-If you're using replit, make a global variable (secret) for the token, reples are public unless you have premium.
+module.exports = () => {
+	return {
+		token: '', // Discord bot token. Aquired on https://discord.com/developers/applications
+		mongooseConnectionString:
+			'',
+		embedColor: 0x2f3136, // The color of the embeds. 0x{hex_code}
+		testServerId: '',
+		developers: [''],
+		clientName: 'Bot',
+		clientAvatar: ``, // Change this to any icon you want. The default is the bot's current avatar icon (./handler/index line:35)
+		acitivityName: 'your messages!',
+		activityType: ActivityType.Watching,
+		activityStatus: 'online',
+		emojis: {
+			levelup: ``,
+			info: ``,
+			space: ``,
+			arrowRight: ``,
+			arrowLeft: ``,
+			doubleLeftArrow: ``,
+			doubleRightArrow: ``,
+		},
+	};
+};
+```
 
 ## Features
 
-- Cooldowns, You can add cooldowns to commands (measured in milliseconds).
-- Permissions, Makes it so only users with permissions can use the command (measured in arrays).
-- Dev only, if set to true only the developers can use the command.
-- Disable, the option to disable commands.
-- Shutdown command, shuts down the bot.
+- Exp gane (vc included)
+- Multi Guild
+- Flexible
