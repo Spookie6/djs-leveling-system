@@ -4,16 +4,21 @@
 	"description": "command handler for discord.js v14",
 	"main": "index.js",
 	"scripts": {
-		"test": "nodemon index.js",
-		"start": "node index.js"
+		"start": "node index.js",
+		"test": "nodemon index.js"
 	},
 	"author": "",
 	"license": "ISC",
 	"dependencies": {
+		"axios": "^1.2.3",
+		"canvafy": "^2.1.0",
 		"discord.js": "^14.7.1",
+		"djs-voice": "^1.2.0",
 		"glob": "^7.2.0",
 		"mongoose": "^6.8.2",
-		"ms": "^2.1.3",
-		"nodemon": "^2.0.20"
+		"ms": "^2.1.3"
+	},
+	"devDependencies": {
+		"prettier": "2.8.3"
 	}
 }
